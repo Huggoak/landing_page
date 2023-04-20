@@ -13,9 +13,9 @@ body {
     background: #0e0e0e;
 }
 
-img {
-    max-width: 100%;
-}
+
+
+
 
 ul {
     list-style-type: none;
@@ -37,26 +37,114 @@ ul {
 
 .navbar .container {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     height: 100%;
-    
+    max-width: 1100px;
     align-items: center;
+    
 }
 
 .navbar a {
     color: #fff;
     text-decoration: none;
     font-size: 18px;
-    margin: 20px;    
+   
 }
 
 .logo {
-    font-size: 24px;
+    font-size: 28px;
     font-weight: bold;
     color: #F9FAF8;
-    margin-right: 20px;
+    
 }
 
 .navbar ul {
     display: flex;
+    justify-content: flex-end;
+    gap: 40px;
+    
+}
+
+.header{
+    background: #1f2937;
+    color: #fff;
+    max-width: 1400px;
+    margin: auto;
+}
+
+.header .container {
+    display: flex;
+    max-width: 1100px;
+    height: 500px;
+    
+}
+
+.header .text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 500px;
+    gap: 10px;
+    
+}
+
+.header h1 {
+    font-size: 38px;
+    font-weight: bolder;
+    line-height: 1.2;
+    /* min-height: 400px; */
+}
+
+img {
+    width: 450px;
+    height: 325px; 
+    margin-left: auto;
+    align-self: center;
+}
+
+button {
+    width: 130px;
+    height: 30px;
+    color: #fff;
+    background: #3882F6;
+    border: none;
+    border-radius: 8px;
+    font-weight: bold;
+    font-size: large;
+    padding: 5px 25px 5px 25px;
+}
+
+.section {
+    background: #fff;
+    color: #1f2937;
+    max-width: 1400px;
+    margin: auto;
+}
+
+.section .container {
+    display: flex;
+    max-width: 1100px;
+    height: 500px;
+    
+    
+}
+
+
+
+
+
+
+
+.article {
+    background: #E5E7EB;
+    color: #1f2937;
+    max-width: 1400px;
+    margin: auto;
+}
+
+.article .container {
+    display: flex;
+    max-width: 1100px;
+    height: 500px;
+    
 }
