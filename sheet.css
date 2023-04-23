@@ -2,7 +2,7 @@
 *  {
     box-sizing: border-box;
     margin: 0;
-    padding: 0;
+    padding: 0; 
 }
 
 body {
@@ -95,6 +95,7 @@ ul {
     margin-left: auto;
     align-self: center;
     margin-left: 20px;
+    border-radius: 5px;
 }
 
 .header button {
@@ -142,11 +143,11 @@ ul {
     height: auto; 
     border-radius: 3px;    
     display: flex;
-    justify-content: center;  
+    justify-content: center;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.3);
 }  
 
-.box .text {
-    text-align: center;
+.section .text {
     margin-top: 20px;
     font-size: 24px;
     font-weight: 700;
@@ -185,28 +186,58 @@ ul {
     font-style: italic;
 }
 
+
+
+
 .aside {
     background: #fff;
     color: #1f2937;
-    width: 1600px;
+    max-width: 1600px;
     margin: auto;
     height: 400px; 
-}
-
-.aside .container {
-    display: flex;
     justify-content: center;
     align-content: center;
-    flex-wrap: wrap;
+    display: flex;
 }
+
 
 .aside .box {
     display: flex; 
-    width: 1000px;
+    width: 1100px;
     height: 170px;
     color: #fff;
     background: #3882F6;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+    gap: 200px;
+    border-radius: 8px;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.3);
 }
+
+
+
+.text h3 {
+    font-size: 24px;
+}
+
+.text h4 {
+    font-size: 15px;
+}
+
+.aside button {
+    width: 160px;
+    height: 40px;
+    color: #fff;
+    background: #3882F6;
+    border-radius: 8px;
+    border: solid #fff 1px;
+    font-weight: bold;
+    font-size: large;
+    padding: 5px 25px 5px 25px;
+}
+
+
 
 .footer {
     background: #1f2937;
@@ -227,3 +258,26 @@ ul {
 .footer .text {
     font-size: 18px;
 }
+
+@media (max-width: 768px) {
+    
+  
+    .container {
+      display: block;
+      text-align: center;
+      padding: 0 20px;
+      width: 100%;
+      max-width: 100%;
+      
+
+    }
+
+    .aside .box {
+        max-width: 800px;
+    }
+
+    .header .container {
+        
+    }
+  }
+
